@@ -8,54 +8,68 @@
     android:backgroundTint="#EDE7E7"
     tools:context=".OngoingEvents">
 
-    <!-- Ongoing Card -->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/ongoings"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="12dp"
-        app:cardBackgroundColor="@color/black"
-        app:cardCornerRadius="4dp"
-        app:cardElevation="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-
-    </androidx.cardview.widget.CardView>
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:background="#FF0000"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/ongoings"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"> <!-- Red for debugging -->
-
-        <ImageView
-            android:layout_width="193dp"
-            android:layout_height="130dp"
-            android:layout_gravity="bottom"
-            android:src="@drawable/img" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
+            <GridLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="2nd Year IT Certification"
-                android:textColor="@color/white"
-                android:textSize="30sp" />
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:columnOrderPreserved="false">
 
+                <!-- Ongoing Card -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/certification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
+                    android:layout_margin="12dp"
+                    app:cardBackgroundColor="@color/black"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:orientation="horizontal"
+                        android:background="#FF0000"> <!-- Red for debugging -->
+
+                        <ImageView
+                            android:layout_width="193dp"
+                            android:layout_height="130dp"
+                            android:layout_gravity="bottom"
+                            android:src="@drawable/img" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:text="2nd Year IT Certification"
+                                android:textColor="@color/white"
+                                android:textSize="30sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+            </GridLayout>
         </LinearLayout>
-    </LinearLayout>
-
-    <!-- Future Card -->
-
+    </ScrollView>
 </FrameLayout>

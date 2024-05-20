@@ -1,15 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:id="@+id/main"
-tools:context=".Certification">
-
-<!-- TODO: Update blank fragment layout -->
-<TextView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:text="@string/hello_blank_fragment" />
+    android:id="@+id/main"
+    android:backgroundTint="#EDE7E7"
+    tools:context=".Certification">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:columnOrderPreserved="false">
+
+                <!-- Existing Cards -->
+
+                <!-- New Card for The Weeknd Starboy Concert -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/starboy_concert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
+                    android:layout_margin="12dp"
+                    app:cardBackgroundColor="#FF000000"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="713dp"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/certificate"
+                            android:scaleType="centerCrop" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="2nd Year IT Certification"
+                            android:textColor="#FFFFFFFF"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Olympischer Platz 3, Berlin"
+                            android:textColor="#B0B0B0"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="February 28, 5:00 PM, Berlin time"
+                            android:textColor="#B0B0B0"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="From $140"
+                            android:textColor="#B0B0B0"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="750+ (inc. Lisa W. and other friends)"
+                            android:textColor="#B0B0B0"
+                            android:textSize="14sp"
+                            android:drawablePadding="4dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="The tour celebrates The Weeknd's album After Hours, as well as his critically-acclaimed album Dawn FM. Kaytranada and Mike Dean will join The Weeknd on all European dates."
+                            android:textColor="#FFFFFFFF"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:layout_width="145dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="16dp"
+                            android:backgroundTint="#FF6200EE"
+                            android:text="Notify Me"
+                            android:textColor="#FFFFFFFF" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Other Existing Cards -->
+
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>

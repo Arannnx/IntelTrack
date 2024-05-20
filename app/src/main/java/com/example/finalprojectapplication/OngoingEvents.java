@@ -3,8 +3,7 @@ package com.example.finalprojectapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
-
+import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
@@ -15,21 +14,21 @@ public class OngoingEvents extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ongoing_events);
 
-        CardView ongoingCard = findViewById(R.id.ongoings); // Assuming the ID is 'ongoings' from your XML
+        CardView certiCard = findViewById(R.id.certification);
 
-        ongoingCard.setOnClickListener(new View.OnClickListener() {
+        certiCard.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)  {
-                openongoingCard();
+            public void onClick(View v) {
+                opencerti();
             }
         });
 
+
     }
 
-    private void openongoingCard() {
-        Intent intent = new Intent(this, OngoingEvents.class); // Ensure Ongoing is a valid Activity class
+    public void opencerti() {
+        Intent intent = new Intent(this, Certification.class);
         startActivity(intent);
     }
-
 
 }
