@@ -25,7 +25,7 @@
                 android:columnCount="2"
                 android:columnOrderPreserved="false">
 
-                <!-- Ongoing Card -->
+
                 <androidx.cardview.widget.CardView
                     android:id="@+id/certification"
                     android:layout_width="wrap_content"
@@ -66,8 +66,6 @@
                         </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
-
-                <!-- Future Card -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/exhibit"
                     android:layout_width="wrap_content"
@@ -108,8 +106,6 @@
                         </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
-
-                <!-- Past Card -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/database"
                     android:layout_width="wrap_content"
@@ -150,8 +146,6 @@
                         </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
-
-                <!-- Recognition Card -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/recognition"
                     android:layout_width="wrap_content"
@@ -192,8 +186,6 @@
                         </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
-
-                <!-- HTML Card -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/html"
                     android:layout_width="wrap_content"
@@ -234,8 +226,6 @@
                         </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
-
-                <!-- Cybersecurity Card -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cybersecurity"
                     android:layout_width="wrap_content"
@@ -276,8 +266,6 @@
                         </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
-
-                <!-- Portfolio Card -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/portfolio"
                     android:layout_width="wrap_content"

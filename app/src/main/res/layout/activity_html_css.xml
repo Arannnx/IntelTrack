@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/main"
     android:backgroundTint="#EDE7E7"
-    tools:context=".Certification">
+    tools:context=".HtmlCss">
 
     <ScrollView
         android:layout_width="match_parent"
