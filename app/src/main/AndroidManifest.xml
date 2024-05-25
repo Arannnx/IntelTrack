@@ -45,10 +45,10 @@
             android:exported="false" />
         <activity
             android:name=".EventList"
-            android:exported="false" /> <!-- DestinationActivity declaration -->
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".SplashScreen"
             android:exported="true"

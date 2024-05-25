@@ -39,6 +39,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        //makes the fragment home the main
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        FragmentHome homeFragment = new FragmentHome();
+        fragmentTransaction.replace(R.id.frame_out, homeFragment);
+        fragmentTransaction.commit();
+
         binding.bottomNavView.setOnItemSelectedListener(item -> {
             if (item.getItemId() == R.id.home) {
                 repFragment(new FragmentHome());
