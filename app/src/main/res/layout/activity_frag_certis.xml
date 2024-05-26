@@ -2,10 +2,10 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/main"
-    android:backgroundTint="#EDE7E7"
+    android:backgroundTint="#FF332525"
     tools:context=".FragCertis">
 
     <androidx.cardview.widget.CardView
@@ -27,8 +27,8 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/certified"
-                android:scaleType="centerCrop" />
+                android:scaleType="centerCrop"
+                android:src="@drawable/certified" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -67,6 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_gravity="center"
+                android:backgroundTint="#332525"
                 android:text="Event Ended" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>

@@ -28,7 +28,7 @@ public class PastEvents extends AppCompatActivity {
 
     // Method to open the FragmentCertifications activity
     private void openCertificationActivity() {
-        Intent intent = new Intent(this, PastEvents.class);
+        Intent intent = new Intent(this, FragCertis.class);
         startActivity(intent);
     }
 }

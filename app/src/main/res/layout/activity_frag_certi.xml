@@ -67,6 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_gravity="center"
+                android:backgroundTint="#FF332525"
                 android:text="Event is Currently Happening" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>

@@ -13,7 +13,7 @@ public class OngoingEvents extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ongoing_events);
 
-        CardView certificationCard = findViewById(R.id.certi);
+        CardView certificationCard = findViewById(R.id.fragmentcertification);
 
         certificationCard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,7 +25,7 @@ public class OngoingEvents extends AppCompatActivity {
     }
 
     public void opencertificationCard() {
-        Intent intent = new Intent(this, FragCertis.class);
+        Intent intent = new Intent(this, FragCerti.class);
         startActivity(intent);
     }
 
