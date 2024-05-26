@@ -7,10 +7,10 @@
     android:id="@+id/main"
     android:backgroundTint="#EDE7E7"
     tools:context=".PastEvents">
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/background"
         android:orientation="vertical">
 
         <LinearLayout
@@ -32,15 +32,14 @@
                     android:layout_height="wrap_content"
                     android:layout_columnSpan="2"
                     android:layout_margin="12dp"
-                    app:cardBackgroundColor="@color/black"
                     app:cardCornerRadius="4dp"
                     app:cardElevation="16dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="140dp"
-                        android:orientation="horizontal"
-                        android:background="#FF0000"> <!-- Red for debugging -->
+                        android:background="@drawable/background"
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="193dp"
@@ -68,46 +67,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <!-- Future Card -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/exhibit"
-                    android:layout_width="wrap_content"
-                    android:layout_height="143dp"
-                    android:layout_columnSpan="2"
-                    android:layout_margin="12dp"
-                    app:cardBackgroundColor="@color/black"
-                    app:cardCornerRadius="4dp"
-                    app:cardElevation="16dp">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="140dp"
-                        android:background="#00FF00"
-                        android:orientation="horizontal"> <!-- Green for debugging -->
-
-                        <ImageView
-                            android:layout_width="200dp"
-                            android:layout_height="130dp"
-                            android:layout_gravity="bottom"
-                            android:src="@drawable/img" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:gravity="center"
-                                android:text="IT Project Exhibit (2nd and 3rd Year)"
-                                android:textColor="@color/white"
-                                android:textSize="30sp" />
-
-                        </LinearLayout>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
 
                 <!-- Past Card -->
                 <androidx.cardview.widget.CardView
@@ -116,15 +76,14 @@
                     android:layout_height="wrap_content"
                     android:layout_columnSpan="2"
                     android:layout_margin="12dp"
-                    app:cardBackgroundColor="@color/black"
                     app:cardCornerRadius="4dp"
                     app:cardElevation="16dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="140dp"
-                        android:orientation="horizontal"
-                        android:background="#0000FF"> <!-- Blue for debugging -->
+                        android:background="@drawable/background"
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="200dp"
@@ -158,15 +117,15 @@
                     android:layout_height="wrap_content"
                     android:layout_columnSpan="2"
                     android:layout_margin="12dp"
-                    app:cardBackgroundColor="@color/black"
                     app:cardCornerRadius="4dp"
                     app:cardElevation="16dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="140dp"
-                        android:orientation="horizontal"
-                        android:background="#FFFF00"> <!-- Yellow for debugging -->
+                        android:background="@drawable/background"
+                        android:orientation="horizontal">
+
 
                         <ImageView
                             android:layout_width="200dp"
@@ -200,15 +159,14 @@
                     android:layout_height="wrap_content"
                     android:layout_columnSpan="2"
                     android:layout_margin="12dp"
-                    app:cardBackgroundColor="@color/black"
                     app:cardCornerRadius="4dp"
                     app:cardElevation="16dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="140dp"
-                        android:orientation="horizontal"
-                        android:background="#FF00FF"> <!-- Magenta for debugging -->
+                        android:background="@drawable/background"
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="200dp"
@@ -242,15 +200,14 @@
                     android:layout_height="wrap_content"
                     android:layout_columnSpan="2"
                     android:layout_margin="12dp"
-                    app:cardBackgroundColor="@color/black"
                     app:cardCornerRadius="4dp"
                     app:cardElevation="16dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="140dp"
-                        android:orientation="horizontal"
-                        android:background="#00FFFF"> <!-- Cyan for debugging -->
+                        android:background="@drawable/background"
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="200dp"
@@ -284,15 +241,14 @@
                     android:layout_height="wrap_content"
                     android:layout_columnSpan="2"
                     android:layout_margin="12dp"
-                    app:cardBackgroundColor="@color/black"
                     app:cardCornerRadius="4dp"
                     app:cardElevation="16dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="140dp"
-                        android:orientation="horizontal"
-                        android:background="#FFA500"> <!-- Orange for debugging -->
+                        android:background="@drawable/background"
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="200dp"

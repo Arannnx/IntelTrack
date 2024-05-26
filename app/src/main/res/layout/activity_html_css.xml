@@ -8,91 +8,71 @@
     android:backgroundTint="#EDE7E7"
     tools:context=".HtmlCss">
 
-    <ScrollView
+    <androidx.cardview.widget.CardView
+        android:id="@+id/html"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_margin="12dp"
+        app:cardBackgroundColor="#FF000000"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="713dp"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-            <GridLayout
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:alignmentMode="alignMargins"
-                android:columnCount="2"
-                android:columnOrderPreserved="false">
+                android:src="@drawable/htmlcss"
+                android:scaleType="centerCrop" />
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/starboy_concert"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_columnSpan="2"
-                    android:layout_margin="12dp"
-                    app:cardBackgroundColor="#FF000000"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="3rd Year HTML and CSS"
+                android:textColor="#FFFFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="713dp"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="University of Mindanao, Digos College - CL2"
+                android:textColor="#B0B0B0"
+                android:textSize="14sp" />
 
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/certificate"
-                            android:scaleType="centerCrop" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="2nd Year IT Certification"
-                            android:textColor="#FFFFFFFF"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="University of Mindanao, Digos College - CL2"
-                            android:textColor="#B0B0B0"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="June 15 2024, 5:00 PM"
-                            android:textColor="#B0B0B0"
-                            android:textSize="14sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="May 28, 2024 - Time: TBA"
+                android:textColor="#B0B0B0"
+                android:textSize="14sp" />
 
 
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="An IT certification is a credential that proves you have the knowledge and skills to perform specific IT tasks. Earning one typically involves passing an exam offered by a recognized organization. Second-year IT certification exams build on that foundation, diving deeper into specialized areas like cybersecurity or networking. These exams assess your ability to apply that knowledge through scenarios and tests, and passing strengthens your resume for more advanced IT careers."
-                            android:textAlignment="viewStart"
-                            android:textColor="#FFFFFFFF"
-                            android:textSize="14sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Witness the Power of Web Design! Join us as the 3rd Year HTML and CSS students showcase their mastery of the web's building blocks. Explore captivating websites and interactive interfaces brought to life with code.  Discover the potential of HTML and CSS and gain inspiration for your own creative ventures. Don't miss this opportunity to see the future web developers in action!"
+                android:textAlignment="viewStart"
+                android:textColor="#FFFFFFFF"
+                android:textSize="14sp" />
 
-                        <Button
-                            android:layout_width="145dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="16dp"
-                            android:backgroundTint="#FF6200EE"
-                            android:text="Notify Me"
-                            android:textColor="#FFFFFFFF" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-            </GridLayout>
+            <Button
+                android:id="@+id/button_schedule_notification"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#FF6200EE"
+                android:text="Notify Me"
+                android:textColor="#FFFFFFFF" />
         </LinearLayout>
-    </ScrollView>
+    </androidx.cardview.widget.CardView>
 </FrameLayout>

@@ -14,11 +14,7 @@
         <menu>
 
             <item android:id="@+id/nav_settings"
-                android:title="Settings"/>
-            <item android:id="@+id/nav_logout"
-                android:icon="@drawable/logout"
-                android:title="Logout"/>
-
+                android:title="About"/>
         </menu>
     </item>
 </menu>

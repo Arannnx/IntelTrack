@@ -17,6 +17,10 @@ public class FutureEvents extends AppCompatActivity {
         CardView certiCard = findViewById(R.id.certification);
         CardView exhibitCard = findViewById(R.id.exhibit);
         CardView DatabaseCard = findViewById(R.id.database);
+        CardView CyberSecurityCard = findViewById(R.id.cybersecurity);
+        CardView htmlcssCard = findViewById(R.id.html);
+        CardView portfolioCard = findViewById(R.id.portfolio);
+        CardView recognitionCard = findViewById(R.id.recognition);
 
         certiCard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +43,34 @@ public class FutureEvents extends AppCompatActivity {
             }
         });
 
+        CyberSecurityCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openCyberSecurityCard();
+            }
+        });
+
+        htmlcssCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openhtmlcssCard();
+            }
+        });
+
+        portfolioCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openportfolioCard();
+            }
+        });
+
+        recognitionCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openrecognitionCard();
+            }
+        });
+
 
     }
 
@@ -54,6 +86,26 @@ public class FutureEvents extends AppCompatActivity {
 
     public void openDatabaseCard() {
         Intent intent = new Intent(this, Database.class);
+        startActivity(intent);
+    }
+
+    public void openCyberSecurityCard() {
+        Intent intent = new Intent(this, CyberSecurity.class);
+        startActivity(intent);
+    }
+
+    public void openhtmlcssCard() {
+        Intent intent = new Intent(this, HtmlCss.class);
+        startActivity(intent);
+    }
+
+    public void openportfolioCard() {
+        Intent intent = new Intent(this, Portfolio.class);
+        startActivity(intent);
+    }
+
+    public void openrecognitionCard() {
+        Intent intent = new Intent(this, Recognition.class);
         startActivity(intent);
     }
 

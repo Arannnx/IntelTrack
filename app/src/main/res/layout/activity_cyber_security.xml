@@ -8,25 +8,8 @@
     android:backgroundTint="#EDE7E7"
     tools:context=".CyberSecurity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <GridLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:alignmentMode="alignMargins"
-                android:columnCount="2"
-                android:columnOrderPreserved="false">
-
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/starboy_concert"
+                    android:id="@+id/cybersecurity"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_columnSpan="2"
@@ -44,14 +27,14 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/certificate"
+                            android:src="@drawable/cb"
                             android:scaleType="centerCrop" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="2nd Year IT Certification"
+                            android:text="3rd Year CyberSecurity"
                             android:textColor="#FFFFFFFF"
                             android:textSize="24sp"
                             android:textStyle="bold" />
@@ -66,7 +49,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="June 15 2024, 5:00 PM"
+                            android:text="May 30, 2024 - Time: TBA"
                             android:textColor="#B0B0B0"
                             android:textSize="14sp" />
 
@@ -76,12 +59,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="An IT certification is a credential that proves you have the knowledge and skills to perform specific IT tasks. Earning one typically involves passing an exam offered by a recognized organization. Second-year IT certification exams build on that foundation, diving deeper into specialized areas like cybersecurity or networking. These exams assess your ability to apply that knowledge through scenarios and tests, and passing strengthens your resume for more advanced IT careers."
+                            android:text="Ready to Combat Cyber Threats? The ITS 4th Year Cybersecurity students are gearing up to present their innovative solutions at the upcoming showcase. Witness the culmination of their hard work as they demonstrate cutting-edge tools and strategies designed to safeguard the digital landscape. Explore the future of cybersecurity and gain valuable insights from these dedicated students."
                             android:textAlignment="viewStart"
                             android:textColor="#FFFFFFFF"
                             android:textSize="14sp" />
 
                         <Button
+                            android:id="@+id/button_schedule_notification"
                             android:layout_width="145dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -89,10 +73,6 @@
                             android:backgroundTint="#FF6200EE"
                             android:text="Notify Me"
                             android:textColor="#FFFFFFFF" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-            </GridLayout>
-        </LinearLayout>
-    </ScrollView>
+            </LinearLayout>
+    </androidx.cardview.widget.CardView>
 </FrameLayout>

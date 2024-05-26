@@ -50,10 +50,10 @@ public class MainActivity extends AppCompatActivity {
         binding.bottomNavView.setOnItemSelectedListener(item -> {
             if (item.getItemId() == R.id.home) {
                 repFragment(new FragmentHome());
-            } else if (item.getItemId() == R.id.profile) {
-                repFragment(new DepartmentFragment());
+            } else if (item.getItemId() == R.id.message) {
+                repFragment(new MessageFragment());
             } else if (item.getItemId() == R.id.settings) {
-                repFragment(new FragmentAppearance());
+                repFragment(new FragmentSettings());
             }
             return true;
         });
@@ -77,9 +77,6 @@ public class MainActivity extends AppCompatActivity {
             drawerLayout.closeDrawer(GravityCompat.START); // Close drawer after selection
             return true;
         });
-    }
-
-    private void repFragment(DepartmentFragment departmentFragment) {
     }
 
     private void repFragment(Fragment fragment) {

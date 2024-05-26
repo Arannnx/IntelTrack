@@ -8,91 +8,73 @@
     android:backgroundTint="#EDE7E7"
     tools:context=".Portfolio">
 
-    <ScrollView
+    <androidx.cardview.widget.CardView
+        android:id="@+id/portfolio"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_margin="12dp"
+        app:cardBackgroundColor="#FF000000"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp">
 
-        <LinearLayout
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="713dp"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:src="@drawable/pf"
+            android:scaleType="centerCrop" />
 
-            <GridLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:alignmentMode="alignMargins"
-                android:columnCount="2"
-                android:columnOrderPreserved="false">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="2nd Year IT Portfolio"
+            android:textColor="#FFFFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/starboy_concert"
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_columnSpan="2"
-                    android:layout_margin="12dp"
-                    app:cardBackgroundColor="#FF000000"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="8dp">
+                    android:text="May 31, 2024 - Time: TBA"
+                    android:textColor="#B0B0B0"
+                    android:textSize="14sp" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="713dp"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Mark your calendars! The deadline for submitting your HTML and CSS portfolio in IT10 is fast approaching. Don't miss out - ensure you have your exceptional creations polished and ready to submit by Friday, May 31st.
+This portfolio is a fantastic opportunity to showcase your mastery of web development fundamentals. Take this chance to impress your instructor and highlight your skills in building dynamic and visually appealing websites using HTML and CSS."
 
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/certificate"
-                            android:scaleType="centerCrop" />
+                    android:textAlignment="viewStart"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="14sp" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="2nd Year IT Certification"
-                            android:textColor="#FFFFFFFF"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="An IT certification is a credential that proves you have the knowledge and skills to perform specific IT tasks. Earning one typically involves passing an exam offered by a recognized organization. Second-year IT certification exams build on that foundation, diving deeper into specialized areas like cybersecurity or networking. These exams assess your ability to apply that knowledge through scenarios and tests, and passing strengthens your resume for more advanced IT careers."
+            android:textAlignment="viewStart"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="University of Mindanao, Digos College - CL2"
-                            android:textColor="#B0B0B0"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="June 15 2024, 5:00 PM"
-                            android:textColor="#B0B0B0"
-                            android:textSize="14sp" />
-
-
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="An IT certification is a credential that proves you have the knowledge and skills to perform specific IT tasks. Earning one typically involves passing an exam offered by a recognized organization. Second-year IT certification exams build on that foundation, diving deeper into specialized areas like cybersecurity or networking. These exams assess your ability to apply that knowledge through scenarios and tests, and passing strengthens your resume for more advanced IT careers."
-                            android:textAlignment="viewStart"
-                            android:textColor="#FFFFFFFF"
-                            android:textSize="14sp" />
-
-                        <Button
-                            android:layout_width="145dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="16dp"
-                            android:backgroundTint="#FF6200EE"
-                            android:text="Notify Me"
-                            android:textColor="#FFFFFFFF" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-            </GridLayout>
+        <Button
+            android:id="@+id/button_schedule_notification"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FF6200EE"
+            android:text="Notify Me"
+            android:textColor="#FFFFFFFF" />
         </LinearLayout>
-    </ScrollView>
+    </androidx.cardview.widget.CardView>
 </FrameLayout>

@@ -22,10 +22,6 @@ public class FragmentHome extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        // Correctly find the TextView within the inflated view
-        marquee_text = view.findViewById(R.id.marquee_text);
-        marquee_text.setSelected(true);
-
         // Correctly find the CardViews within the inflated view
         CardView ongoingCard = view.findViewById(R.id.ongoing);
         CardView futureCard = view.findViewById(R.id.future);

@@ -8,91 +8,69 @@
     android:backgroundTint="#EDE7E7"
     tools:context=".Exhibit">
 
-    <ScrollView
+    <androidx.cardview.widget.CardView
+        android:id="@+id/expo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_margin="12dp"
+        app:cardBackgroundColor="#FF000000"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="713dp"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-            <GridLayout
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:alignmentMode="alignMargins"
-                android:columnCount="2"
-                android:columnOrderPreserved="false">
+                android:src="@drawable/expo"
+                android:scaleType="centerCrop" />
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/starboy_concert"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_columnSpan="2"
-                    android:layout_margin="12dp"
-                    app:cardBackgroundColor="#FF000000"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="2nd Year IT Exhbit"
+                android:textColor="#FFFFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="713dp"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="University of Mindanao, Digos College - CL2"
+                android:textColor="#B0B0B0"
+                android:textSize="14sp" />
 
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/certificate"
-                            android:scaleType="centerCrop" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="May 27, 2024 - Time: 7:00 AM"
+                android:textColor="#B0B0B0"
+                android:textSize="14sp" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="2nd Year IT Certification"
-                            android:textColor="#FFFFFFFF"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Witness the Future! Join us next week at the [Exhibit Name] where we'll be showcasing our groundbreaking new app. Get a sneak peek at the features that will revolutionize [mention the problem your app solves]  and experience the app firsthand through interactive demos. Don't miss this opportunity to be among the first to see what the future holds!"
+                android:textAlignment="viewStart"
+                android:textColor="#FFFFFFFF"
+                android:textSize="14sp" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="University of Mindanao, Digos College - CL2"
-                            android:textColor="#B0B0B0"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="June 15 2024, 5:00 PM"
-                            android:textColor="#B0B0B0"
-                            android:textSize="14sp" />
-
-
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="An IT certification is a credential that proves you have the knowledge and skills to perform specific IT tasks. Earning one typically involves passing an exam offered by a recognized organization. Second-year IT certification exams build on that foundation, diving deeper into specialized areas like cybersecurity or networking. These exams assess your ability to apply that knowledge through scenarios and tests, and passing strengthens your resume for more advanced IT careers."
-                            android:textAlignment="viewStart"
-                            android:textColor="#FFFFFFFF"
-                            android:textSize="14sp" />
-
-                        <Button
-                            android:layout_width="145dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="16dp"
-                            android:backgroundTint="#FF6200EE"
-                            android:text="Notify Me"
-                            android:textColor="#FFFFFFFF" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-            </GridLayout>
-        </LinearLayout>
-    </ScrollView>
+            <Button
+                android:id="@+id/button_schedule_notification"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#FF6200EE"
+                android:text="Notify Me"
+                android:textColor="#FFFFFFFF" />
+              </LinearLayout>
+        </androidx.cardview.widget.CardView>
 </FrameLayout>
