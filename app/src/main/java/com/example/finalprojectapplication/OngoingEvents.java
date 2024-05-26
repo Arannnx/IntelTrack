@@ -3,7 +3,6 @@ package com.example.finalprojectapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
@@ -14,20 +13,19 @@ public class OngoingEvents extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ongoing_events);
 
-        CardView certiCard = findViewById(R.id.certification);
+        CardView certificationCard = findViewById(R.id.fragmentcertification);
 
-        certiCard.setOnClickListener(new View.OnClickListener() {
+        certificationCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                opencerti();
+                opencertificationCard();
             }
         });
 
-
     }
 
-    public void opencerti() {
-        Intent intent = new Intent(this, Certification.class);
+    public void opencertificationCard() {
+        Intent intent = new Intent(this, FragmentCertification.class);
         startActivity(intent);
     }
 

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#504949"
+    android:backgroundTint="#EDE7E7"
+    tools:context=".FragmentCertifications">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/certifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_margin="12dp"
+        app:cardBackgroundColor="#FF000000"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="713dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/certified" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="2nd Year IT Certification"
+                android:textColor="#FFFFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="University of Mindanao, Digos College - CL2"
+                android:textColor="#B0B0B0"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TBA"
+                android:textColor="#B0B0B0"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="An IT certification is a credential that proves you have the knowledge and skills to perform specific IT tasks. Earning one typically involves passing an exam offered by a recognized organization. Second-year IT certification exams build on that foundation, diving deeper into specialized areas like cybersecurity or networking. These exams assess your ability to apply that knowledge through scenarios and tests, and passing strengthens your resume for more advanced IT careers."
+                android:textAlignment="viewStart"
+                android:textColor="#FFFFFFFF"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/button_schedule_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:backgroundTint="#FF504949"
+                android:text="Event Ended" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
