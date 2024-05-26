@@ -1,10 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.finalprojectapplication">
-
     <!-- Permissions for notifications and alarms -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
-    <uses-permission android:name="android.permission.USE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
 
     <application
         android:allowBackup="true"
@@ -13,44 +13,61 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/Theme.FinalProjectApplication">
-
-        <!-- Notification Receiver -->
-        <receiver android:name=".NotificationReceiver"
+        <activity
+            android:name=".FragCertis"
             android:exported="false" />
-        <!-- Main Activity -->
-        <activity android:name=".MainActivity"
-            android:exported="false"/>
-        <!-- Other Activities -->
-        <activity android:name=".Certification"
-            android:exported="false"/>
-        <activity android:name=".Portfolio"
+        <activity
+            android:name=".FragCerti"
+            android:exported="false" /> <!-- Notification Receiver -->
+        <receiver
+            android:name=".NotificationReceiver"
+            android:exported="false" /> <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" /> <!-- Other Activities -->
+        <activity
+            android:name=".Certification"
             android:exported="false" />
-        <activity android:name=".CyberSecurity"
+        <activity
+            android:name=".Portfolio"
             android:exported="false" />
-        <activity android:name=".HtmlCss"
+        <activity
+            android:name=".CyberSecurity"
             android:exported="false" />
-        <activity android:name=".Recognition"
+        <activity
+            android:name=".HtmlCss"
             android:exported="false" />
-        <activity android:name=".Database"
+        <activity
+            android:name=".Recognition"
             android:exported="false" />
-        <activity android:name=".Exhibit"
+        <activity
+            android:name=".Database"
             android:exported="false" />
-        <activity android:name=".OngoingEvents"
+        <activity
+            android:name=".Exhibit"
             android:exported="false" />
-        <activity android:name=".FutureEvents"
+        <activity
+            android:name=".OngoingEvents"
             android:exported="false" />
-        <activity android:name=".PastEvents"
+        <activity
+            android:name=".FutureEvents"
             android:exported="false" />
-        <activity android:name=".EventList"
+        <activity
+            android:name=".PastEvents"
             android:exported="false" />
-        <!-- Splash Screen Activity -->
-        <activity android:name=".SplashScreen"
+        <activity
+            android:name=".EventList"
+            android:exported="false" /> <!-- Splash Screen Activity -->
+        <activity
+            android:name=".SplashScreen"
             android:exported="true"
             android:theme="@style/Splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
+
 </manifest>

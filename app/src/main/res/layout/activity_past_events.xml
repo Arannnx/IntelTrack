@@ -31,9 +31,8 @@
             </TextView>
         </LinearLayout>
 
-
         <androidx.cardview.widget.CardView
-            android:id="@+id/fragmentcertification"
+            android:id="@+id/certi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnSpan="2"

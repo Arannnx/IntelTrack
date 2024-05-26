@@ -11,10 +11,8 @@ import androidx.cardview.widget.CardView;
 
 public class FragmentHome extends Fragment {
 
-    TextView marquee_text;
-
     public FragmentHome() {
-        // Required empty public constructor
+
     }
 
     @Override
